@@ -13,7 +13,7 @@ class ParamsExamplesController < ApplicationController
     render json: {message: output_message}
   end
 
-  def query_guess
+  def guess
     user_guess = params[:user_guess].to_i
     winning_number = 36
     if user_guess > winning_number
@@ -30,4 +30,5 @@ class ParamsExamplesController < ApplicationController
     user_message = params[:my_message]
     render json: {message: "Your message is #{user_message}"}
   end
+
 end
