@@ -36,4 +36,14 @@ class ParamsExamplesController < ApplicationController
     render json: {message: "Your email is #{my_email}"}
   end
 
+  def body_credentials
+    username = params[:username]
+    password = params[:password]
+    output_message = "Invalid Credentials"
+    if username == "hugh" && password == "swordfish"
+      output_message = "Valid Credentials"
+    end
+    render json: {message: output_message}
+  end
+
 end

@@ -7,4 +7,6 @@ Rails.application.routes.draw do
   get "/url_guess/:user_guess" => "params_examples#guess"
 
   post "/body_params" => "params_examples#body_params"
+  post "/body_guess" => "params_examples#guess"
+  post "/body_credentials" => "params_examples#body_credentials"
 end
