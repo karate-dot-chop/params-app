@@ -31,4 +31,9 @@ class ParamsExamplesController < ApplicationController
     render json: {message: "Your message is #{user_message}"}
   end
 
+  def body_params
+    my_email = params[:email]
+    render json: {message: "Your email is #{my_email}"}
+  end
+
 end

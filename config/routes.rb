@@ -5,4 +5,6 @@ Rails.application.routes.draw do
 
   get "/url_params/:my_message" => "params_examples#url_params"
   get "/url_guess/:user_guess" => "params_examples#guess"
+
+  post "/body_params" => "params_examples#body_params"
 end
