@@ -27,6 +27,7 @@ class ParamsExamplesController < ApplicationController
   end
 
   def url_params
-    render json: {message: "Sanity check"}
+    user_message = params[:my_message]
+    render json: {message: "Your message is #{user_message}"}
   end
 end
